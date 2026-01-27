@@ -14,6 +14,8 @@ class AppStates(Helper):
     
     STATE_ADD_CHANNEL_ID = Item()
     STATE_ADD_CHANNEL_TG_ID = Item()
+    STATE_ADD_CHANNEL_NAME = Item()
+    STATE_ADD_CHANNEL_APPROVE = Item()
     STATE_ADD_CHANNEL_LINK_NAME = Item()
 
     STATE_MASS_SEND_BTN = Item()
@@ -25,3 +27,26 @@ class AppStates(Helper):
     STATE_WAIT_MSG = Item()
     STATE_WAIT_MSG_BUTTON = Item()
     STATE_WAIT_MSG_MASS_SEND_TIME = Item()
+
+    STATE_APPROVE_REQUERSTS = Item()
+
+    STATE_APPROVEMENT_SETTINGS = Item()
+
+    STATE_WAIT_PROXY = Item()
+    STATE_WAIT_PHONE = Item()
+    STATE_WAIT_AUTH_CODE = Item()
+    STATE_WAIT_2FA = Item()
+    
+    STATE_GET_LINK = Item()
+    
+    STATE_GET_DELAY = Item()
+
+    STATE_GET_PUSH_DATA = Item()
+    STATE_GET_PUSH_BUTTON = Item()
+
+    STATE_ADD_LEAD = Item()
+
+    STATE_LEAD_STATS = Item()
+
+    STATE_DAY_STATS_GET_DATE = Item()
+    

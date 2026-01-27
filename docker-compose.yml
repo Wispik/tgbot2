@@ -1,0 +1,21 @@
+services:
+  app:
+    build: .
+    
+    env_file:
+      - ./.env
+    
+    volumes:
+      - ./files:/app/files:rw
+      - ./sessions:/app/sessions:rw
+      - .:/app
+      
+    environment:
+      - TOKEN=${TOKEN}
+      - MONGO_URI=${MONGO_URI}
+      - MONGO_DB=${MONGO_DB}
+    
+    restart: always
+    
+    logging:
+      driver: "journald"
